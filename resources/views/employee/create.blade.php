@@ -1,7 +1,11 @@
 @extends('layouts.app')
-
+@section('title','Employee Create')
 @section('content')
-
+<div class="card-body">
+    <div class="d-flex flex-wrap justify-content-between align-items-center mb-3">
+        <h5 class="mb-0">Employee Create</h5>
+    </div>
+</div>
 <form method="POST" name="employee_create" action="{{ url('/create') }}">
   @csrf
   <div class="row g-3">
